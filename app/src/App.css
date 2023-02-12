@@ -1,0 +1,11 @@
+* {
+  background-color: #0b1745;
+}
+
+
+.App {
+  text-align: center;
+  display: flex;
+    flex-direction: row;
+  color: white;
+}
