@@ -6,6 +6,9 @@
 .App {
   text-align: center;
   display: flex;
-    flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
   color: white;
+  margin: 200px auto;
+  gap: 200px;
 }
