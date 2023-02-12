@@ -15,14 +15,14 @@ message: string
 
 
 const Counter = (props: CounterPropsType) => {
-    //const disableIncrementButton = props.counterValue === props.maxValue
+    const disableIncrementButton = props.counterValue === props.maxValue
     const disabledResetButton = props.startValue >= props.counterValue
 
     return (
         <div className={s.counter}>
             <CounterBord counterValue={props.counterValue} maxValue={props.maxValue} message={props.message}/>
             <div className={s.btnField}>
-                <UniversalButton title={"INC"} disabled={props.disableIncrementBtn} callback={props.incrementCallback}/>
+                <UniversalButton title={"INC"} disabled={disableIncrementButton} callback={props.incrementCallback}/>
                 <UniversalButton title={"RESET"} disabled={disabledResetButton} callback={props.resetCallback}/>
             </div>
 

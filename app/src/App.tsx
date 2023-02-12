@@ -9,15 +9,17 @@ function App() {
     const [startValue, setStartValue] = useState(0)
     const [counterValue, setCounter] = useState(startValue)
     const [maxValue, setMaxValue] = useState(0)
-    const [message, setMessage] = useState('Input and SET')
+    const [message, setMessage] = useState('')
     const [disableIncrementBtn, setDisableIncrementBtn] = useState(true)
     // --------CALLBACKS-----------
     const incrementCallback = () => {
-        counterValue === maxValue ? setDisableIncrementBtn(true) : setCounter(counterValue + 1)
+       // counterValue === maxValue ? setDisableIncrementBtn(true) : setCounter(counterValue + 1)
+        setCounter(counterValue + 1)
     }
     const resetCallback = () => {
         setCounter(startValue)
     }
+
 
 
     const setSettings = () => {
